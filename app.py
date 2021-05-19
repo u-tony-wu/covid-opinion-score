@@ -9,7 +9,7 @@ import transformers
 tokenizer = transformers.DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
 
 # Part Two - generate Tweet embedding
-distilBERT_model = torch.load('models/distil_bert.h5')
+distilBERT_model = transformers.DistilBertModel.from_pretrained('distilbert-base-uncased')
 distilBERT_model.eval()
 
 # Part Three - generate opinion score

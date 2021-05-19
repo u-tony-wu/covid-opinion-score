@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1904d18-83bb-45c2-a6d9-2c4cd5b2790d" name="Default Changelist" comment="" />
+    <list default="true" id="b1904d18-83bb-45c2-a6d9-2c4cd5b2790d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/distil_bert.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tker.pkl" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JupyterTrust" id="9da8ccfa-ed45-4eee-879e-ffc0fedb2feb" />
   <component name="ProjectId" id="1sjIpWzPyJuAUh4obJ53sdP3XJO" />
   <component name="ProjectViewState">
@@ -26,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -93,6 +102,7 @@
       <workItem from="1621443744799" duration="6289000" />
       <workItem from="1621457912743" duration="83000" />
       <workItem from="1621458039545" duration="2949000" />
+      <workItem from="1621466248017" duration="339000" />
     </task>
     <servers />
   </component>
@@ -128,10 +138,10 @@
       <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="215" y="111" key="SettingsEditor/0.23.1440.817@0.23.1440.817" timestamp="1621394995854" />
-    <state x="434" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1621458040490">
+    <state x="434" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1621466248742">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
-    <state x="434" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1621458040490" />
+    <state x="434" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1621466248742" />
     <state x="650" y="164" width="670" height="676" key="search.everywhere.popup" timestamp="1621380035281">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
