@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} Result {% endblock %}
+{% block content %}
+    <h5>Tweet text: </h5>
+    <p>{{ tweet }}</p>
+    <br/>
+    <h5>The opinion score is {{ output }}</h5>
+    <br/>
+    <h5>What this means</h5>
+    <p>{{ explanation }}</p>
+
+{% endblock %}

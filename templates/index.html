@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+    <h1>Home page</h1>
+    <br/>
+    <h2>Descriptions</h2>
+    <div class="mb-3">
+        <form action="{{ url_for('predict_score') }}", method="post">
+            <label> Enter Tweet Here: </label>
+            <br/>
+            <textarea class="form-control" name="tweet" rows="3"></textarea>
+            <br/>
+            <button type="submit" class="btn btn-secondary">Predict</button>
+        </form>
+    </div>
+
+{% endblock %}
