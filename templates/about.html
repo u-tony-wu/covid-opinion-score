@@ -17,4 +17,16 @@
         of a pretrained distilBERT component that generates a 768-dimensional sentence embedding
         for input tweet text and a two-layer fully-connected neural network that converts sentence
         embedding into opinion score.</p>
+    <br/>
+    <img src="../static/model%20architecture.png" alt="model architecture" style=
+            "position: relative; width: 80%; left: 100px; right: auto; text-align: center">
+    <p style="text-align: center">Opinion Model Architecture</p>
+    <p style="font-size:18px">Note that distilBERT is a "distilled" version of BERT: it only has
+        6 transformer blocks. Due to limited computational power, this project uses distilBERT
+        as a faster and lighter alternative to BERT to generate embedding for input text.  </p>
+    <img src="../static/distilbert%20architecture.png" alt="distilBERT architecture" style=
+            "position: relative; left: 430px; height: 600px">
+    <br/>
+    <p>To learn more about distilBERT, please refer to <a href="https://huggingface.co/transformers/model_doc/distilbert.html">link</a>.</p>
+
 {% endblock %}
