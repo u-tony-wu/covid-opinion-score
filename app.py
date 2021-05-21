@@ -40,7 +40,7 @@ def make_prediction(sentence):
 exps = [
     "Tweets with this level of opinion score strongly reject COVID health measures such as wearing a mask or social distancing, often denouncing them as hoaxes.",
     "Tweets with this level of opinion score show disbelief about the efficacy of COVID health measures, sometimes openly rejecting them. ",
-    "Tweets with this level of opinion score typically take a weak, neutral, or irrelevant position on whether people should practice COVID health measures. They may include phrases that the model finds ambiguous or irrelevant. ",
+    "Tweets with this level of opinion score are typically either irrelevant, or take a weak or neutral position on whether people should practice COVID health measures. They may include phrases that the model finds ambiguous or irrelevant. ",
     "Tweets with this level of opinion score demonstrate awareness of practicing COVID health measures, such as wearing a mask and social distancing. ",
     "Tweets with this level of opinion score strongly advocate for practicing COVID health measures during the pandemic, sometimes reasoning about their significance to public health. "
         ]
@@ -84,7 +84,7 @@ def predict_score():
                                explanation=explanation, output_color=color)
 
 
-    return redirect(url_for('home_page'))
+    return redirect('/')
 
 
 if __name__ == '__main__':
