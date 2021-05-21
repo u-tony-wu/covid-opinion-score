@@ -2,9 +2,12 @@
 {% block title %} Result {% endblock %}
 {% block content %}
     <h5>Tweet text: </h5>
+    {% if empty %}
+        <span style="color:red">Your tweet is empty! Please go back and enter something. </span>
+    {% endif %}
     <p>{{ tweet }}</p>
-    <br/>
-    <h5>The opinion score is {{ output }}</h5>
+
+    <h5>Opinion score: <span style="color: {{ output_color }}">{{ output }}</span></h5>
     <br/>
     <h5>What this means</h5>
     <p>{{ explanation }}</p>

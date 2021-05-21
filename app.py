@@ -62,24 +62,29 @@ def predict_score():
         input_data = request.form['tweet']
         input_data = input_data.strip()
         if input_data == "":
-            return render_template('result.html', tweet=input_data, output=0, explanation="")
+            return render_template('result.html', tweet=input_data, output=0, explanation="", empty=True)
         score = round(make_prediction(input_data), 4)
 
+        color = 'red'
         if score <= -0.6:
             explanation = exps[0]
         elif score <= -0.2:
             explanation = exps[1]
         elif score <= 0.2:
             explanation = exps[2]
+            color = 'orange'
         elif score <=0.6:
             explanation = exps[3]
+            color = 'green'
         else:
             explanation = exps[4]
+            color = 'green'
 
-        return render_template('result.html', tweet=input_data, output=score, explanation=explanation)
+        return render_template('result.html', tweet=input_data, output=score,
+                               explanation=explanation, output_color=color)
 
 
-    return redirect('/')
+    return redirect(url_for('home_page'))
 
 
 if __name__ == '__main__':

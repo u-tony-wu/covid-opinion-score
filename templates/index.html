@@ -1,19 +1,43 @@
 {% extends "base.html" %}
 {% block title %} Home {% endblock %}
 {% block content %}
-    <h1>Home page</h1>
+    <h2>Home</h2>
     <br/>
-    <h2>Descriptions</h2>
-    <p>The opinion score measured is the extent to which a tweet advocates for
+    <h4>What's opinion score?</h4>
+    <p>
+        The opinion score produced by this app measures the extent to which a tweet advocates for
         practicing COVID health measures (such as social distancing, wearing a mask,
-        or staying at home) and calling people to action, ranging from -1 to 1. </p>
+        or staying at home) and calls people to action, ranging from -1.0(against) to 1.0(for).
+        Note that a score of zero means the tweet is neutral or ambiguous about COVID
+        health measures, or is irrelevant to COVID-19.
+    </p>
+    <p>Here are some examples of opinion score calculated by this app: </p>
+    <p>
+        Tweet: "We need to be responsible we tell our kids to do what they are told in the effort
+        to teach them what responsibility is? Well it is time to be responsible wear your #mask
+        and #SocialDistance we are in a #pandemic #covid19" <br/>
+        Opinion score: <span style="color: green">0.747</span>
+    </p>
+    <p>
+        Tweet: "Hello my friends! Have a good day!"<br/>
+        Opinion Score: <span style="color: orange">-0.0313</span>
+    </p>
+    <p>
+        Tweet: "@ePearce4Q No, this was a political hoax. It was the only way dems could cancel
+        26 primary voting days in LOCKDOWN MARCH. Hospitals all over the country have been
+        empty for MONTHS #FilmYourHospital this was all a scam to get 12 TRILLION DOLLAR
+        BAILOUT #Scamdemic  #Plandemic2020 #Event201  https://t.co/EY7folvsiv"
+        <br/> Opinion score: <span style="color: red">-0.9683</span>
+    </p>
+    <br/>
+    <h4>Try it!</h4>
     <div class="mb-3">
         <form action="{{ url_for('predict_score') }}", method="post">
             <label> Enter Tweet Here: </label>
             <br/>
-            <textarea class="form-control" name="tweet" rows="3"></textarea>
+            <textarea class="form-control" name="tweet" rows="5"></textarea>
             <br/>
-            <button type="submit" class="btn btn-secondary">Predict</button>
+            <button type="submit" class="btn btn-secondary">Calculate</button>
         </form>
     </div>
 

@@ -1,5 +1,20 @@
 {% extends 'base.html' %}
 {% block title %} About {% endblock %}
 {% block content %}
-    About page
+    <h2>About This Project</h2>
+    <br/>
+    <p style="font-size:18px">One of the most effective ways to combat COVID-19 is to make sure that everyone
+        practices safety measures from the beginning, such as wearing a mask, social distancing,
+        or staying at home. It is thus important to understand how the public awareness of
+        these COVID health measures has evolved since the outbreak, and from there shed light
+        on how public health campaigns could best boost people’s awareness of the appropriate
+        disease control actions during a pandemic.</p>
+    <p style="font-size:18px">To achieve this goal, this project focuses on investigating public awareness of health
+        measures, during COVID-19 pandemic, as reflected in tweets. A machine learning-based
+        language model has been built and trained on a corpus of thousands of COVID-related
+        tweets, identified via six hashtags (in alphabetical order): #coronahoax, #nomask,
+        #plandemic, #scamdemic, #socialdistance, #wearamask. More specifically, the model consists
+        of a pretrained distilBERT component that generates a 768-dimensional sentence embedding
+        for input tweet text and a two-layer fully-connected neural network that converts sentence
+        embedding into opinion score.</p>
 {% endblock %}
