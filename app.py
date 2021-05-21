@@ -37,11 +37,13 @@ def make_prediction(sentence):
     pred = score_model(cls)
     return pred.item()
 
-exps = ["very negative",
-        "somewhat negative",
-        "basically neutral or irrelevant",
-        "somewhat positive",
-        "very positive"]
+exps = [
+    "Tweets with this level of opinion score strongly reject COVID health measures such as wearing a mask or social distancing, often denouncing them as hoaxes.",
+    "Tweets with this level of opinion score show disbelief about the efficacy of COVID health measures, sometimes openly rejecting them. ",
+    "Tweets with this level of opinion score typically take a weak, neutral, or irrelevant position on whether people should practice COVID health measures. They may include phrases that the model finds ambiguous or irrelevant. ",
+    "Tweets with this level of opinion score demonstrate awareness of practicing COVID health measures, such as wearing a mask and social distancing. ",
+    "Tweets with this level of opinion score strongly advocate for practicing COVID health measures during the pandemic, sometimes reasoning about their significance to public health. "
+        ]
 
 # App starts here
 app = Flask(__name__)
