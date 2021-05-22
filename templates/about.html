@@ -1,15 +1,16 @@
 {% extends 'base.html' %}
 {% block title %} About {% endblock %}
 {% block content %}
-    <h2>About This Project</h2>
-    <br/>
-    <p style="font-size:18px">One of the most effective ways to combat COVID-19 is to make sure that everyone
+    <h3>About This Project</h3>
+
+    <p>One of the most effective ways to combat COVID-19 is to make sure that everyone
         practices safety measures from the beginning, such as wearing a mask, social distancing,
         or staying at home. It is thus important to understand how the public awareness of
         these COVID health measures has evolved since the outbreak, and from there shed light
         on how public health campaigns could best boost people’s awareness of the appropriate
         disease control actions during a pandemic.</p>
-    <p style="font-size:18px">To achieve this goal, this project focuses on investigating public awareness of health
+    <p>
+        To achieve this goal, this project focuses on investigating public awareness of health
         measures, during COVID-19 pandemic, as reflected in tweets. A machine learning-based
         language model has been built and trained on a corpus of thousands of COVID-related
         tweets, identified via six hashtags (in alphabetical order): #coronahoax, #nomask,
@@ -17,16 +18,23 @@
         of a pretrained distilBERT component that generates a 768-dimensional sentence embedding
         for input tweet text and a two-layer fully-connected neural network that converts sentence
         embedding into opinion score.</p>
+
     <br/>
-    <img src="../static/model%20architecture.png" alt="model architecture" style=
-            "position: relative; width: 80%; left: 100px; right: auto; text-align: center">
-    <p style="text-align: center">Opinion Model Architecture</p>
-    <p style="font-size:18px">Note that distilBERT is a "distilled" version of BERT: it only has
+    <div class="content" style="text-align: center;">
+        <img src="../static/model%20architecture.png" alt="model architecture" style=
+            "position: relative; width: 80%; left: auto; right: auto;">
+    </div>
+    <p style="text-align: center; font-size: 16px">Opinion Model Architecture</p>
+    <p>Note that distilBERT is a "distilled" version of BERT: it only has
         6 transformer blocks. Due to limited computational power, this project uses distilBERT
         as a faster and lighter alternative to BERT to generate embedding for input text.  </p>
-    <img src="../static/distilbert%20architecture.png" alt="distilBERT architecture" style=
-            "position: relative; left: 430px; height: 600px">
+
+    <div class="content" style="text-align: center;">
+        <img src="../static/distilbert%20architecture.png" alt="model architecture" style=
+            "position: relative; width: 40%; left: auto; right: auto;">
+    </div>
     <br/>
-    <p>To learn more about distilBERT, please refer to Huggingface's documentation <a href="https://huggingface.co/transformers/model_doc/distilbert.html">here</a>.</p>
+    <p>To learn more about distilBERT, please refer to Huggingface's
+        documentation <a href="https://huggingface.co/transformers/model_doc/distilbert.html">here</a>.</p>
 
 {% endblock %}
